@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Adil Khan | AI &amp; ML Portfolio</title>
+<meta name="description" content="Adil Khan, B.Tech CSE (AI &amp; ML) student and hackathon winner. Python, computer vision and healthcare AI projects.">
+<meta name="theme-color" content="#05040d">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head><body>
+<div id="glow" aria-hidden="true"></div><div id="progress"></div>
+<header id="nav"><a href="#home" class="logo">Adil Khan</a>
+<button id="menu" aria-label="Menu" aria-expanded="false">Menu</button>
+<nav id="links"><a href="#about">About</a><a href="#offer">Offer</a><a href="#projects">Projects</a><a href="#github">GitHub</a><a href="#contact">Contact</a></nav></header>
+<main id="main">
+<section id="home" class="hero">
+  <div class="rail" aria-label="Social links"><a id="gh" target="_blank" rel="noopener" aria-label="GitHub">GH</a><a id="mail" aria-label="Email">@</a></div>
+  <div class="hl"><p class="hello">Hello, I'm</p><h1 id="name">Adil Khan</h1></div>
+  <div class="photo"><img src="/assets/adil.jpg" alt="Portrait of Adil Khan" fetchpriority="high"></div>
+  <div class="hr"><p class="hello">Creative</p><h2 id="role" aria-live="off"></h2></div>
+  <a id="cv" class="resume" href="/resume.pdf" hidden>Resume ↓</a>
+  <a class="scroll" href="#about">Scroll ↓</a>
+</section>
+
+<section id="about" class="section">
+  <h2 class="sec-title reveal">About <span>me</span></h2>
+  <p class="about-text reveal" id="objective"></p>
+  <div class="stats reveal" id="stats"></div>
+</section>
+
+<section id="offer" class="section">
+  <h2 class="sec-title reveal">What I <span>Offer</span></h2>
+  <div class="offer">
+    <article class="ocard open reveal"><button class="ohead" aria-expanded="true"><h3>Development<br>Skills</h3><i>⌃</i></button>
+      <div class="obody"><p id="tagline"></p><div id="skills"></div></div></article>
+    <article class="ocard reveal"><button class="ohead" aria-expanded="false"><h3>Education &amp;<br>Achievements</h3><i>⌃</i></button>
+      <div class="obody"><div id="edu"></div><div id="ach"></div></div></article>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <h2 class="sec-title reveal">My <span>Projects</span></h2>
+  <div class="grid" id="proj-grid"></div>
+</section>
+
+<section id="github" class="section">
+  <h2 class="sec-title reveal">Live on <span>GitHub</span></h2>
+  <div class="ghbox reveal" id="gh-profile"><p class="muted">Loading GitHub…</p></div>
+  <div class="grid" id="gh-repos"></div>
+  <img class="graph reveal" id="graph" alt="GitHub contribution graph" loading="lazy" hidden>
+</section>
+
+<section id="contact" class="section">
+  <h2 class="sec-title reveal">Get in <span>touch</span></h2>
+  <div class="contact-wrap">
+    <div class="reveal"><h3>Let's work together.</h3><p class="muted">Looking for an internship or entry-level role. Send a message and I'll reply soon.</p><ul id="contact-list"></ul></div>
+    <form id="form" class="reveal card" novalidate>
+      <label>Name<input name="name" required autocomplete="name"></label>
+      <label>Email<input name="email" type="email" required autocomplete="email"></label>
+      <label>Message<textarea name="message" rows="5" required></textarea></label>
+      <button class="btn" type="submit">Send message</button><p id="form-status" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+<footer><p>© 2026 Adil Khan · <span id="visits"></span></p></footer>
+<script src="/js/app.js"></script>
+</body></html>
